@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper {
+    margin: 100px auto;
+    width: 500px;
+    height: 300px;
+    background-image: linear-gradient(to top left, orange, orangered );
+    border-radius: 25px;
+}
+.counter {
+    text-align: center;
+    padding: 5px;
+    color: white;
+    /* font-weight: 300; */
+}
+.counter h3{
+    color: white;
+}
+hr{
+    border: none;
+    border-bottom: 2px solid rgb(248,217,60);
+    width: 80%;
+}
+.buttons {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0.5rem;
+}
+button {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    justify-content: space-between;
+    width: 80px;
+}
+

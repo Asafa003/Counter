@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="counter.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="counter">
+            <h3>Counter App</h3>
+            <h1 id="display">0</h1>
+            <hr>
+        </div>
+        <div class="buttons">
+            <button id="sub">Sub</button>
+            <button id="reset">Reset</button>
+            <button id="Add">Add</button>
+        </div>
+    </div>
+    <script>
+        let display = document.getElementById('display');
+        let sub = document.getElementById('sub')
+        let reset = document.getElementById('reset')
+        let add =document.getElementById('Add')
+        let wrapper = document.querySelector('.wrapper')
+        let result = 0;
+
+        sub.addEventListener('click', function() {
+            
+            if (result == 0 || result < 0) {
+                display.innerHTML = 0
+            }
+            else{
+                result -= 1;
+                display.innerHTML = result;
+            }
+        })
+
+
+        add.addEventListener('click', function() {
+
+            if (result < 20) {
+                result +=1;
+                display.innerHTML = result;
+                // display.innerHTML = 0;
+            }
+            else if (result == 20){
+                // display.innerHTML = '';
+                result = 0;
+                result +=1;
+                display.innerHTML = result;
+                // display.innerHTML = result++;
+            }
+        })
+
+        reset.addEventListener ('click', function() {
+            result = 0;
+            display.innerHTML =0;
+        })
+
+
+    </script>
+</body>
+</html>
